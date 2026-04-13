@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Clemente | Especialista em Beleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .bg-soft-pink { background-color: #FFF5F7; }
+        .text-rose-accent { color: #E8A0B5; }
+        .btn-gradient { background: linear-gradient(135deg, #FFD1DC 0%, #E8A0B5 100%); }
+        html { scroll-behavior: smooth; }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <a href="https://wa.me/5511939352361?text=Ola!%20Gostaria%20de%20agendar%20um%20horario%20no%20Studio%20Clemente." class="whatsapp-float" target="_blank">
+        <svg fill="currentColor" width="30px" height="30px" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.539 2.016 2.041-.54c.947.527 1.997.874 3.245.877h.001c3.182 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.765-5.767-5.765zm3.374 8.213c-.147.414-.712.763-1.138.828-.353.054-.814.097-2.312-.527-1.921-.799-3.101-2.903-3.198-3.036-.093-.133-.787-.992-.787-1.891 0-.899.472-1.342.64-1.524.169-.181.365-.227.487-.227.122 0 .244.001.35.006.114.005.266-.042.417.311.156.365.536 1.258.583 1.351.047.093.078.202.016.326-.062.124-.093.202-.186.307-.093.104-.195.233-.277.311-.093.088-.19.186-.08.37.111.185.491.767 1.054 1.248.725.619 1.334.811 1.522.903.187.093.296.078.405-.042.11-.12.467-.514.593-.689.126-.176.252-.148.423-.086.171.062 1.082.487 1.27.579.188.092.312.138.357.214.045.076.045.438-.102.852z"/></svg>
+    </a>
+
+    <header class="py-6 px-10 flex justify-between items-center border-b border-pink-100 sticky top-0 bg-white z-50">
+        <h1 class="text-2xl md:text-3xl text-rose-accent tracking-widest uppercase">Studio Clemente</h1>
+        <nav class="hidden md:flex space-x-8 font-light text-sm uppercase tracking-wider">
+            <a href="#servicos" class="hover:text-rose-400 transition">Servicos</a>
+            <a href="https://www.instagram.com/studiol.clemente?igsh=MXI5eHh4aGprenhqNA==" target="_blank" class="hover:text-rose-400 transition">Instagram</a>
+            <a href="#contato" class="hover:text-rose-400 transition">Contato</a>
+        </nav>
+    </header>
+
+    <section class="py-20 px-6 text-center bg-soft-pink">
+        <h2 class="text-4xl md:text-6xl mb-4 text-gray-800">Sua beleza em boas maos.</h2>
+        <p class="max-w-lg mx-auto text-gray-500 mb-2 font-light italic text-xl">Studio Clemente</p>
+        <p class="max-w-lg mx-auto text-gray-400 mb-8 text-sm uppercase tracking-widest">Guarulhos | Presidente Dutra</p>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+            <a href="https://wa.me/5511939352361?text=Ola!%20Gostaria%20de%20agendar%20um%20horario%20no%20Studio%20Clemente." 
+               target="_blank" 
+               class="btn-gradient text-white px-10 py-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 inline-block font-semibold w-64 text-center">
+               Agendar agora
+            </a>
+            <a href="https://www.instagram.com/studiol.clemente?igsh=MXI5eHh4aGprenhqNA==" 
+               target="_blank" 
+               class="border border-rose-200 text-rose-400 px-10 py-4 rounded-full hover:bg-rose-50 transition w-64 text-center">
+               Ver Instagram
+            </a>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl mb-2 text-rose-accent">Nossos Servicos</h2>
+            <div class="h-1 w-20 bg-rose-200 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <div class="bg-white p-8 rounded-2xl border border-pink-50 shadow-sm">
+                <h3 class="text-xl mb-6 font-semibold flex items-center text-rose-accent italic text-2xl">Cabelos</h3>
+                <ul class="space-y-4">
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Corte Feminino</span>
+                        <span class="font-semibold italic text-rose-400">R$ 80,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Escova e Lavagem</span>
+                        <span class="font-semibold italic text-rose-400">R$ 60,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Hidratacao Profunda</span>
+                        <span class="font-semibold italic text-rose-400">R$ 120,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Mechas e Luzes</span>
+                        <span class="font-semibold italic text-rose-400 text-sm">SOB CONSULTA</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-pink-50 shadow-sm">
+                <h3 class="text-xl mb-6 font-semibold flex items-center text-rose-accent italic text-2xl">Olhar</h3>
+                <ul class="space-y-4">
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Design de Sobrancelha</span>
+                        <span class="font-semibold italic text-rose-400">R$ 45,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Extensao de Cilios</span>
+                        <span class="font-semibold italic text-rose-400">R$ 160,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Lash Lifting</span>
+                        <span class="font-semibold italic text-rose-400">R$ 130,00</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dotted border-pink-200 pb-2">
+                        <span>Design com Henna</span>
+                        <span class="font-semibold italic text-rose-400">R$ 65,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-gray-50 py-12 px-6 text-center border-t border-pink-100">
+        <p class="mb-4 font-light italic text-rose-400 text-2xl">Studio Clemente</p>
+        <p class="text-sm text-gray-500 mb-2">Presidente Dutra - Guarulhos, SP</p>
+        <p class="text-sm text-gray-400 mb-6 italic">Atendimento exclusivo com hora marcada</p>
+        
+        <div class="flex justify-center space-x-8 mb-8">
+            <a href="https://wa.me/5511939352361" target="_blank" class="text-gray-500 hover:text-green-500 transition font-semibold text-sm">WHATSAPP</a>
+            <a href="https://www.instagram.com/studiol.clemente?igsh=MXI5eHh4aGprenhqNA==" target="_blank" class="text-gray-500 hover:text-pink-400 transition font-semibold text-sm">INSTAGRAM</a>
+        </div>
+        
+        <p class="text-[10px] uppercase tracking-widest text-gray-300">© 2026 Studio Clemente. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
